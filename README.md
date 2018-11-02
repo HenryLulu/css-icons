@@ -1,5 +1,5 @@
 # CSS-ICONS
-CSS3实现的单元素仿文库图标
+CSS3实现的单元素图标
 
 预览地址：https://henrylulu.github.io/css-icons/demo.html
 
