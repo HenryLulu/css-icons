@@ -2,38 +2,17 @@
 @front: #333;
 @back: #fff;
 
-// 默认尺寸为iconfont库demo尺寸1/3
-body {
-    background: @back;
-}
-.icon-box {
-    margin-bottom: 40px;
+.icon {
     display: inline-block;
     position: relative;
-    padding: 14px;
-    vertical-align: top;
-    font-size: 0;
-    .icon {
-        display: inline-block;
-        position: relative;
-        color: @front;
-        &:before, &:after {
-            position: absolute;
-            content: '';
-        } 
-    }
-    p {
+    color: @front;
+    &:before, &:after {
         position: absolute;
-        left: 0;
-        width: 100%;
-        font-size: 12px;
-        text-align: center;
-    }
+        content: '';
+    } 
 }
 
-
-
-.icon-like{
+.icon-like {
     width: 0;
     height: 0;
     margin: 5px 18px 17px 4px;

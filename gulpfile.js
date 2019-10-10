@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 gulp.task('default', ['less']);
 
 gulp.task('less', function () {
-    return gulp.src('*.less')
+    return gulp.src(['*.less', 'src/*.less'])
         .pipe(less())
         .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions', '> 1%', 'ie 9'] }) ]))
         .pipe(minifyCSS())
