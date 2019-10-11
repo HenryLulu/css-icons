@@ -12,3 +12,43 @@
     } 
 }
 
+// common
+.circle {
+  width: .88em;
+  height: .88em;
+  box-sizing: border-box;
+  margin: .06em;
+  border: .08em solid @front;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+// icons
+.icon-check-circle {
+  &:extend(.circle);
+  &:before {
+    top: .2em;
+    right: .16em;
+    border-style: solid;
+    border-width: .32em .24em;
+    border-color: @front transparent transparent transparent;
+    clip-path: polygon(0 .12em, 50% .12em, 50% 0, 100% 0, 100% 100%, 0 100%);
+  }
+  &:after {
+    top: .2em;
+    right: .24em;
+    border-style: solid;
+    border-width: .21em .16em;
+    border-color: @back transparent transparent transparent;
+  }
+}
+
+.icon-CI {
+  &:extend(.circle);
+  &:before {
+    top: .23em;
+    left: .24em;
+    box-sizing: border-box;
+    
+  }
+}
