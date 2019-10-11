@@ -755,8 +755,94 @@
     box-shadow: 0 0 0 .14em @back;
   }
 }
+.icon-logout {
+  width: .84em;
+  height: .84em;
+  margin: .08em;
+  box-sizing: border-box;
+  border: .08em solid @front;
+  border-radius: 50%;
+  &:before {
+    top: 50%;
+    left: .31em;
+    transform: translate(0, -50%);
+    height: .07em;
+    width: .36em;
+    background: @front;
+    box-shadow: 0 0 0 .18em @back;
+  }
+  &:after {
+    top: 50%;
+    transform: translate(0, -50%);
+    left: .62em;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: .12em .15em;
+    border-color: transparent transparent transparent @front;
+  }
+}
+.icon-pie-chart {
+  width: .78em;
+  height: .78em;
+  margin: .15em .15em .07em .07em;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 .08em @front;
+  border-radius: 50%;
+  &:before {
+    top: 0;
+    right: 0;
+    width: .42em;
+    height: .42em;
+    box-sizing: border-box;
+    border: solid @front;
+    border-width: 0 0 .08em .08em;
+    background: @back;
+  }
+  &:after {
+    top: -.08em;
+    right: -.08em;
+    width: .39em;
+    height: .39em;
+    box-sizing: border-box;
+    border: .08em solid @front;
+    border-top-right-radius: 100%;
+  }
+}
 
 // ---- 缺口圆系列 end ----
+
+.icon-eye {
+  width: .34em;
+  height: .34em;
+  margin: .33em;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 .07em @front;
+  &:before {
+    top: -.14em;
+    left: 50%;
+    transform: translate(-50%, 0) scaleX(.8);
+    width: 1.28em;
+    height: 1.28em;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: solid @front;
+    border-width: .08em .1em;
+    clip-path: inset(0 0 75% 0);
+  }
+  &:after {
+    bottom: -.14em;
+    left: 50%;
+    transform: translate(-50%, 0) scaleX(.8);
+    width: 1.28em;
+    height: 1.28em;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: solid @front;
+    border-width: .08em .1em;
+    clip-path: inset(75% 0 0 0);
+  }
+}
 
 // ---- hard ----
 .icon-dashboard {
@@ -795,4 +881,42 @@
       0 -.15em 0 0 @front, 0 -.1em 0 0 @front, 0 -.05em 0 0 @front
     ;
   }
+}
+
+.icon-setting {
+  width: .88em;
+  height: .88em;
+  margin: .06em;
+  box-sizing: border-box;
+  border: .16em solid @front;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 .1em @back, inset 0 0 0 .17em @front;
+  &:before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: .74em;
+    height: .74em;
+    box-sizing: border-box;
+    border: .09em solid @back;
+    border-radius: 50%;
+    clip-path: polygon(
+      .285em .224em, .37em -.33em, .455em .224em,
+      .9685em .02em, .54em .37em,
+      .9685em .72em, .455em .516em,
+      .37em 1.07em, .285em .516em,
+      -.2285em .72em, .2em .37em,
+      -.2285em .02em
+    )
+  }
+  // &:after {
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   width: .86em;
+  //   height: .86em;
+  //   box-sizing: border-box;
+  //   border: .11em solid @back;
+  //   border-radius: 50%;
+  // }
 }
