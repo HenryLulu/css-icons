@@ -2113,6 +2113,162 @@
     clip-path: inset(50% 0 0 0);
   }
 }
+.icon-database {
+  width: .69em;
+  height: .88em;
+  margin: .06em .155em;
+  border: .07em solid @front;
+  box-sizing: border-box;
+  border-radius: .03em;
+  &:before {
+    top: 50%;
+    left: .07em;
+    transform: translate(0, -50%);
+    width: .08em;
+    height: .08em;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 .07em @front, 0 -.265em 0 0 @front, 0 .265em 0 0 @front;
+  }
+  &:after {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 100%;
+    height: .06em;
+    box-shadow: 0 -.135em 0 0 @front, 0 .135em 0 0 @front;
+  }
+}
+.icon-server {
+  width: .69em;
+  height: .88em;
+  margin: .06em .155em;
+  border: .07em solid @front;
+  box-sizing: border-box;
+  border-radius: .03em;
+  &:before {
+    top: 50%;
+    right: .07em;
+    transform: translate(0, -50%);
+    width: .08em;
+    height: .08em;
+    border-radius: 50%;
+    box-shadow: 0 .265em 0 0 @front;
+  }
+  &:after {
+    top: 50%;
+    left: .07em;
+    transform: translate(0, -50%);
+    width: .2em;
+    height: .06em;
+    box-shadow: 
+      inset 0 0 0 .06em @front,
+      0 -.265em 0 0 @front,
+      -.1em -.135em 0 0 @front,
+      .1em -.135em 0 0 @front,
+      .2em -.135em 0 0 @front,
+      .3em -.135em 0 0 @front,
+      -.1em .135em 0 0 @front,
+      .1em .135em 0 0 @front,
+      .2em .135em 0 0 @front,
+      .3em .135em 0 0 @front
+    ;
+  }
+}
+.icon-mobile {
+  width: .58em;
+  height: .87em;
+  margin: .065em .21em;
+  border: .07em solid @front;
+  box-sizing: border-box;
+  border-radius: .06em;
+  &:before {
+    left: 50%;
+    bottom: .06em;
+    transform: translate(-50%, 0);
+    width: .08em;
+    height: .08em;
+    border-radius: 50%;
+    background: @front;
+  }
+}
+.icon-tablet {
+  width: .69em;
+  height: .88em;
+  margin: .06em .155em;
+  border: .07em solid @front;
+  box-sizing: border-box;
+  border-radius: .06em;
+  &:before {
+    left: 50%;
+    bottom: .06em;
+    transform: translate(-50%, 0);
+    width: .08em;
+    height: .08em;
+    border-radius: 50%;
+    background: @front;
+  }
+}
+.icon-red-envelope {
+  width: .69em;
+  height: .88em;
+  margin: .06em .155em;
+  border: .07em solid @front;
+  box-sizing: border-box;
+  border-radius: .03em;
+  overflow: hidden;
+  &:before {
+    top: -.27em;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(45deg) skew(-9deg, -9deg);
+    width: .35em;
+    height: .35em;
+    border: .06em solid @front;
+    transform-origin: center center;
+    border-radius: .02em;
+  }
+  &:after {
+    left: 50%;
+    bottom: .09em;
+    transform: translate(-50%, 0);
+    width: .27em;
+    height: .33em;
+    background: @front;
+    clip-path: polygon(
+      0 0, .06em 0, 50% .14em, .21em 0, 100% 0,
+      .19em .17em, .235em .17em, .235em .21em, .17em .21em, .17em .24em, .235em .24em, .235em .28em, .17em .28em, .17em 100%,
+      .1em 100%, .1em .28em, .035em .28em, .035em .24em, .1em .24em, .1em .21em, .035em .21em, .035em .17em, .08em .17em
+    );
+  }
+}
+.icon-book {
+  width: .69em;
+  height: .88em;
+  margin: .06em .155em;
+  border: .07em solid @front;
+  box-sizing: border-box;
+  border-radius: .03em;
+  overflow: hidden;
+  &:before {
+    top: 0;
+    left: .275em;
+    width: .21em;
+    height: .32em;
+    background: @front;
+    clip-path: polygon(
+      0 0, 0 100%, 50% .24em, 100% 100%, 100% 0
+    );
+  }
+  &:after {
+    top: 0;
+    left: .33em;
+    width: .105em;
+    height: .22em;
+    background: @back;
+    clip-path: polygon(
+      0 0, 0 100%, 50% .18em, 100% 100%, 100% 0
+    );
+  }
+}
 
 // ---- other end ----
 
